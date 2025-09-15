@@ -3,8 +3,8 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
-import YouTubeSection from "@/components/YouTubeSection";
-import LiveChat from "@/components/LiveChat";
+import YouTubeFetch from "@/components/YouTubeFetch";
+import AIChat from "@/components/AIChat";
 import Footer from "@/components/Footer";
 
 const HomePage = () => {
@@ -15,9 +15,9 @@ const HomePage = () => {
       <About />
       <Services />
       <Testimonials />
-      <YouTubeSection />
+      <YouTubeFetch />
       <Footer />
-      <LiveChat />
+      <AIChat />
     </div>
   );
 };

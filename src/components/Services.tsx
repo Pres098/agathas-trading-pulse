@@ -4,87 +4,87 @@ import { Badge } from "@/components/ui/badge";
 import { Check, Crown, Star, Zap, TrendingUp, Users, MessageCircle, BookOpen } from "lucide-react";
 
 const Services = () => {
-  const plans = [
+  const services = [
     {
-      name: "Free Signals",
-      price: "Free",
-      description: "Get started with basic trading signals",
+      name: "Free Trading Signals",
+      description: "Get daily trading signals completely free",
       features: [
-        "2-3 signals per day",
-        "Basic market analysis",
-        "Email notifications",
-        "Community access",
-        "Educational resources"
-      ],
-      popular: false,
-      icon: <Star className="h-6 w-6" />,
-      buttonText: "Get Started",
-      buttonVariant: "outline" as const
-    },
-    {
-      name: "Premium Signals",
-      price: "$49/month",
-      description: "Advanced signals with higher accuracy",
-      features: [
-        "8-12 premium signals daily",
+        "5-8 quality signals daily",
         "Real-time signal delivery",
-        "Advanced technical analysis",
-        "Risk management guidance",
-        "1-on-1 support",
-        "Exclusive trading strategies",
-        "Performance tracking",
-        "Priority customer support"
+        "Market analysis included",
+        "Telegram group access",
+        "Educational resources",
+        "Community support",
+        "YouTube tutorials",
+        "Mobile notifications"
       ],
       popular: true,
-      icon: <Crown className="h-6 w-6" />,
-      buttonText: "Start Premium",
+      icon: <Star className="h-6 w-6" />,
+      buttonText: "Join Free Signals",
       buttonVariant: "default" as const
     },
     {
-      name: "VIP Mentorship",
-      price: "$199/month",
-      description: "Personal mentorship and advanced strategies",
+      name: "Free Mentorship",
+      description: "Learn trading strategies and market analysis",
       features: [
-        "Everything in Premium",
-        "Personal 1-on-1 mentorship",
-        "Custom trading strategies",
-        "Live trading sessions",
-        "Direct WhatsApp access",
-        "Account analysis",
-        "Advanced market insights",
-        "Exclusive webinars"
+        "Weekly live sessions",
+        "Trading strategy tutorials",
+        "Market analysis training",
+        "Risk management guidance",
+        "Q&A sessions",
+        "Educational webinars",
+        "Trading psychology tips",
+        "Beginner-friendly content"
       ],
       popular: false,
-      icon: <Zap className="h-6 w-6" />,
-      buttonText: "Join VIP",
+      icon: <BookOpen className="h-6 w-6" />,
+      buttonText: "Start Learning",
+      buttonVariant: "outline" as const
+    },
+    {
+      name: "Free Community",
+      description: "Join our supportive trading community",
+      features: [
+        "Active Telegram community",
+        "Peer support network",
+        "Strategy discussions",
+        "Trade idea sharing",
+        "Success stories",
+        "Market news updates",
+        "Live chat support",
+        "Networking opportunities"
+      ],
+      popular: false,
+      icon: <Users className="h-6 w-6" />,
+      buttonText: "Join Community",
       buttonVariant: "outline" as const
     }
   ];
 
-  const additionalServices = [
+  const freeResources = [
     {
       title: "Live Trading Sessions",
       description: "Watch Agatha trade live and learn her exact strategies in real-time.",
       icon: <TrendingUp className="h-8 w-8 text-trading-gold" />,
-      price: "Included in VIP"
+      price: "Free on YouTube"
     },
     {
-      title: "Private Community",
-      description: "Join our exclusive Telegram group with successful traders sharing insights.",
+      title: "Trading Community",
+      description: "Join our supportive Telegram group with traders sharing insights and strategies.",
       icon: <Users className="h-8 w-8 text-trading-gold" />,
-      price: "Premium & VIP"
+      price: "Free to Join"
     },
     {
-      title: "1-on-1 Consultation",
-      description: "Personal trading consultation to optimize your strategy and performance.",
+      title: "Market Analysis",
+      description: "Daily market analysis and trading opportunities shared for free.",
       icon: <MessageCircle className="h-8 w-8 text-trading-gold" />,
-      price: "$97/session"
+      price: "Free Daily"
     },
     {
-      title: "Trading Course",
-      description: "Complete binary options course from beginner to advanced strategies.",
+      title: "Educational Content",
+      description: "Complete tutorials and guides from beginner to advanced strategies.",
       icon: <BookOpen className="h-8 w-8 text-trading-gold" />,
-      price: "$297 one-time"
+      price: "Always Free"
     }
   ];
 
@@ -93,25 +93,25 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">
-            Choose Your Trading Plan
+            Free Trading Services
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Start with free signals or upgrade to premium for advanced strategies and personal mentorship
+            Everything you need to succeed in binary options trading - completely free with no hidden costs
           </p>
         </div>
 
-        {/* Main Plans */}
+        {/* Free Services */}
         <div className="grid md:grid-cols-3 gap-8 mb-20">
-          {plans.map((plan, index) => (
+          {services.map((service, index) => (
             <Card 
               key={index} 
               className={`relative ${
-                plan.popular 
+                service.popular 
                   ? "border-trading-gold shadow-trading-gold scale-105" 
                   : "border-border"
               } hover:shadow-trading transition-all duration-300`}
             >
-              {plan.popular && (
+              {service.popular && (
                 <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gradient-gold text-primary-foreground">
                   Most Popular
                 </Badge>
@@ -119,20 +119,20 @@ const Services = () => {
               
               <CardHeader className="text-center pb-4">
                 <div className={`w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4 ${
-                  plan.popular ? "bg-gradient-gold" : "bg-secondary"
+                  service.popular ? "bg-gradient-gold" : "bg-secondary"
                 }`}>
-                  <div className={plan.popular ? "text-primary-foreground" : "text-trading-gold"}>
-                    {plan.icon}
+                  <div className={service.popular ? "text-primary-foreground" : "text-trading-gold"}>
+                    {service.icon}
                   </div>
                 </div>
-                <CardTitle className="text-2xl font-bold">{plan.name}</CardTitle>
-                <div className="text-3xl font-bold text-trading-blue mb-2">{plan.price}</div>
-                <CardDescription>{plan.description}</CardDescription>
+                <CardTitle className="text-2xl font-bold">{service.name}</CardTitle>
+                <div className="text-3xl font-bold text-trading-success mb-2">100% FREE</div>
+                <CardDescription>{service.description}</CardDescription>
               </CardHeader>
               
               <CardContent>
                 <ul className="space-y-3 mb-8">
-                  {plan.features.map((feature, featureIndex) => (
+                  {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center">
                       <Check className="h-5 w-5 text-trading-success mr-3 flex-shrink-0" />
                       <span className="text-sm">{feature}</span>
@@ -141,41 +141,41 @@ const Services = () => {
                 </ul>
                 
                 <Button 
-                  variant={plan.buttonVariant}
+                  variant={service.buttonVariant}
                   className={`w-full ${
-                    plan.buttonVariant === "default" 
+                    service.buttonVariant === "default" 
                       ? "bg-gradient-gold text-primary-foreground hover:opacity-90 shadow-trading-gold" 
                       : ""
                   }`}
                 >
-                  {plan.buttonText}
+                  {service.buttonText}
                 </Button>
               </CardContent>
             </Card>
           ))}
         </div>
 
-        {/* Additional Services */}
+        {/* Free Resources */}
         <div className="text-center mb-12">
           <h3 className="text-3xl font-bold text-foreground mb-4">
-            Additional Services
+            Free Resources & Support
           </h3>
           <p className="text-lg text-muted-foreground">
-            Enhance your trading journey with our specialized services
+            Everything you need to succeed in trading - completely free
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {additionalServices.map((service, index) => (
+          {freeResources.map((resource, index) => (
             <Card key={index} className="text-center hover:shadow-trading transition-all duration-300">
               <CardContent className="pt-6">
                 <div className="mb-4">
-                  {service.icon}
+                  {resource.icon}
                 </div>
-                <h4 className="text-lg font-semibold mb-2">{service.title}</h4>
-                <p className="text-sm text-muted-foreground mb-4">{service.description}</p>
-                <Badge variant="outline" className="text-trading-gold border-trading-gold">
-                  {service.price}
+                <h4 className="text-lg font-semibold mb-2">{resource.title}</h4>
+                <p className="text-sm text-muted-foreground mb-4">{resource.description}</p>
+                <Badge variant="outline" className="text-trading-success border-trading-success">
+                  {resource.price}
                 </Badge>
               </CardContent>
             </Card>
@@ -186,17 +186,17 @@ const Services = () => {
         <div className="text-center mt-16">
           <div className="bg-gradient-primary rounded-2xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-4">
-              Ready to Start Your Trading Success?
+              Ready to Start Trading for Free?
             </h3>
             <p className="text-lg mb-6 opacity-90">
-              Join thousands of traders already earning with Agatha's proven strategies
+              Join thousands of traders already learning and earning with Agatha's free signals and education
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-white text-trading-blue hover:bg-gray-100">
-                Start Free Trial
+                Get Free Signals
               </Button>
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                Schedule Consultation
+                Join Telegram Community
               </Button>
             </div>
           </div>
