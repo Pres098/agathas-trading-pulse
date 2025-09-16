@@ -32,8 +32,8 @@ const Footer = () => {
   const services = [
     { name: "Free Signals", href: "/services" },
     { name: "Free Education", href: "/education" },
-    { name: "Telegram Community", href: "https://t.me/+Lz2O4iqb4W40NzQy" },
-    { name: "YouTube Channel", href: "https://youtube.com/@agathasignals" },
+    { name: "Telegram Community", href: "https://t.me/+amhxB4d7lMFhMGMy" },
+    { name: "YouTube Channel", href: "https://youtube.com/@misstrading" },
     { name: "Live Trading", href: "/services" },
     { name: "Free Resources", href: "/education" },
   ];
@@ -56,7 +56,7 @@ const Footer = () => {
                 <TrendingUp className="h-6 w-6 text-primary-foreground" />
               </div>
               <div className="flex flex-col">
-                <span className="text-xl font-bold text-white">AGATHA TRADE</span>
+                <span className="text-xl font-bold text-white">JENNY ADAMS TRADE</span>
                 <span className="text-xs text-trading-gold font-medium">SIGNALS & EARNINGS</span>
               </div>
             </div>
@@ -67,13 +67,13 @@ const Footer = () => {
             </p>
             
             <div className="flex space-x-4">
-              <a href="https://t.me/+Lz2O4iqb4W40NzQy" target="_blank" rel="noopener noreferrer" 
+              <a href="https://t.me/+amhxB4d7lMFhMGMy" target="_blank" rel="noopener noreferrer" 
                  className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-trading-gold transition-colors">
                 <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121L9.8 13.617l-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/>
                 </svg>
               </a>
-              <a href="https://youtube.com/@agathasignals" target="_blank" rel="noopener noreferrer" 
+              <a href="https://youtube.com/@misstrading" target="_blank" rel="noopener noreferrer" 
                  className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-trading-gold transition-colors">
                 <Youtube className="h-5 w-5" />
               </a>
@@ -157,7 +157,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-trading-gold" />
-                <span className="text-gray-300 text-sm">contact@agathatrade.com</span>
+                <span className="text-gray-300 text-sm">contact@jennyadamstrade.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-trading-gold" />
@@ -187,7 +187,7 @@ const Footer = () => {
             </div>
             
             <div className="text-sm text-gray-400">
-              © 2024 Agatha Trade. All rights reserved.
+              © 2024 Jenny Adams Trade. All rights reserved.
             </div>
           </div>
         </div>

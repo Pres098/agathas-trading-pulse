@@ -35,7 +35,7 @@ const Hero = () => {
             
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
               Master Binary Trading with
-              <span className="text-trading-gold block">Agatha's Signals</span>
+              <span className="text-trading-gold block">Jenny's Signals</span>
             </h1>
             
             <p className="text-xl text-white/90 mb-8 leading-relaxed">
@@ -84,11 +84,11 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
-              <Button size="lg" className="bg-gradient-gold text-primary-foreground hover:opacity-90 shadow-trading-gold" onClick={() => window.open('https://youtube.com/@agathasignals', '_blank')}>
+              <Button size="lg" className="bg-gradient-gold text-primary-foreground hover:opacity-90 shadow-trading-gold" onClick={() => window.open('https://youtube.com/@misstrading', '_blank')}>
                 <Play className="mr-2 h-5 w-5" />
                 Watch Free Signals
               </Button>
-              <Button size="lg" variant="outline" className="border-trading-gold text-trading-gold hover:bg-trading-gold hover:text-primary-foreground" onClick={() => window.open('https://t.me/+Lz2O4iqb4W40NzQy', '_blank')}>
+              <Button size="lg" variant="outline" className="border-trading-gold text-trading-gold hover:bg-trading-gold hover:text-primary-foreground" onClick={() => window.open('https://t.me/+amhxB4d7lMFhMGMy', '_blank')}>
                 <Users className="mr-2 h-5 w-5" />
                 Join Telegram
               </Button>

@@ -23,34 +23,34 @@ const YouTubeFetch = () => {
   });
   const [isLoading, setIsLoading] = useState(true);
 
-  // Real videos from Agatha's channel
+  // Real videos from Jenny's channel
   const mockVideos: VideoData[] = [
     {
-      id: "kcATt3OISoI",
-      title: "QUOTEX Strategy - Free Trading Signals Live Session",
-      thumbnail: "https://img.youtube.com/vi/kcATt3OISoI/maxresdefault.jpg",
+      id: "QYPBsLFpuL8",
+      title: "Binary Options Strategy - Free Live Trading Session",
+      thumbnail: "https://img.youtube.com/vi/QYPBsLFpuL8/maxresdefault.jpg",
       views: "25,431",
       publishedAt: "2 days ago",
       description: "Join me for a live trading session with free signals and real-time analysis. Learn my proven strategies step by step."
     },
     {
-      id: "pyWRUEAHHec", 
-      title: "Binary Options Free Strategy - Live Trading Results",
-      thumbnail: "https://img.youtube.com/vi/pyWRUEAHHec/maxresdefault.jpg",
+      id: "-LJ4vIaWyQI", 
+      title: "Free Trading Signals - Live Results & Analysis",
+      thumbnail: "https://img.youtube.com/vi/-LJ4vIaWyQI/maxresdefault.jpg",
       views: "18,234",
       publishedAt: "4 days ago"
     },
     {
-      id: "EoM-MUpxzxw",
-      title: "Free Trading Signals - Market Analysis & Strategy", 
-      thumbnail: "https://img.youtube.com/vi/EoM-MUpxzxw/maxresdefault.jpg",
+      id: "lwP4i2GN4K8",
+      title: "Market Analysis & Free Trading Strategy", 
+      thumbnail: "https://img.youtube.com/vi/lwP4i2GN4K8/maxresdefault.jpg",
       views: "31,562",
       publishedAt: "1 week ago"
     },
     {
-      id: "FqtQGvNoIN4",
-      title: "QUOTEX Live Trading - Free Educational Session",
-      thumbnail: "https://img.youtube.com/vi/FqtQGvNoIN4/maxresdefault.jpg", 
+      id: "YBNe9UhfqMI",
+      title: "Live Trading Session - Free Educational Content",
+      thumbnail: "https://img.youtube.com/vi/YBNe9UhfqMI/maxresdefault.jpg", 
       views: "22,891",
       publishedAt: "1 week ago"
     }
@@ -71,7 +71,7 @@ const YouTubeFetch = () => {
   };
 
   const openYouTubeChannel = () => {
-    window.open('https://youtube.com/@agathasignals', '_blank');
+    window.open('https://youtube.com/@misstrading', '_blank');
   };
 
   const stats = [
@@ -231,7 +231,7 @@ const YouTubeFetch = () => {
                 Don't Miss Any Free Trading Opportunities
               </h3>
               <p className="text-lg mb-6 opacity-90">
-                Subscribe to my YouTube channel for daily FREE trading signals, live sessions, and market analysis.
+                Subscribe to Jenny's YouTube channel for daily FREE trading signals, live sessions, and market analysis.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="bg-red-500 hover:bg-red-600 text-white" onClick={openYouTubeChannel}>

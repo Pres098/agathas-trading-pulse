@@ -90,7 +90,7 @@ const About = () => {
             </Badge>
             
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Meet Agatha
+              Meet Jenny Adams
               <span className="text-trading-gold block">Your Trading Mentor</span>
             </h1>
             

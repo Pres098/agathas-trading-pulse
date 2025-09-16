@@ -64,7 +64,7 @@ const Services = () => {
   const freeResources = [
     {
       title: "Live Trading Sessions",
-      description: "Watch Agatha trade live and learn her exact strategies in real-time.",
+      description: "Watch Jenny trade live and learn her exact strategies in real-time.",
       icon: <TrendingUp className="h-8 w-8 text-trading-gold" />,
       price: "Free on YouTube"
     },
@@ -149,11 +149,11 @@ const Services = () => {
                   }`}
                   onClick={() => {
                     if (service.name === "Free Trading Signals") {
-                      window.open('https://t.me/+Lz2O4iqb4W40NzQy', '_blank');
+                      window.open('https://t.me/+amhxB4d7lMFhMGMy', '_blank');
                     } else if (service.name === "Free Mentorship") {
-                      window.open('https://youtube.com/@agathasignals', '_blank');
+                      window.open('https://youtube.com/@misstrading', '_blank');
                     } else {
-                      window.open('https://t.me/+Lz2O4iqb4W40NzQy', '_blank');
+                      window.open('https://t.me/+amhxB4d7lMFhMGMy', '_blank');
                     }
                   }}
                 >
@@ -198,13 +198,13 @@ const Services = () => {
               Ready to Start Trading for Free?
             </h3>
             <p className="text-lg mb-6 opacity-90">
-              Join thousands of traders already learning and earning with Agatha's free signals and education
+              Join thousands of traders already learning and earning with Jenny's free signals and education
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-trading-blue hover:bg-gray-100" onClick={() => window.open('https://t.me/+Lz2O4iqb4W40NzQy', '_blank')}>
+              <Button size="lg" className="bg-white text-trading-blue hover:bg-gray-100" onClick={() => window.open('https://t.me/+amhxB4d7lMFhMGMy', '_blank')}>
                 Get Free Signals
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" onClick={() => window.open('https://t.me/+Lz2O4iqb4W40NzQy', '_blank')}>
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" onClick={() => window.open('https://t.me/+amhxB4d7lMFhMGMy', '_blank')}>
                 Join Telegram Community
               </Button>
             </div>
