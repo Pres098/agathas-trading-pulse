@@ -23,43 +23,36 @@ const YouTubeFetch = () => {
   });
   const [isLoading, setIsLoading] = useState(true);
 
-  // Mock data for Agatha's channel (since we can't fetch real YouTube API without key)
+  // Real videos from Agatha's channel
   const mockVideos: VideoData[] = [
     {
-      id: "dQw4w9WgXcQ1",
-      title: "How I Made $5,425 in 11 Minutes - QUOTEX Tutorial",
-      thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
+      id: "kcATt3OISoI",
+      title: "QUOTEX Strategy - Free Trading Signals Live Session",
+      thumbnail: "https://img.youtube.com/vi/kcATt3OISoI/maxresdefault.jpg",
       views: "25,431",
       publishedAt: "2 days ago",
-      description: "Watch my complete trading session where I demonstrate the exact strategy that led to $5,425 profit in just 11 minutes using QUOTEX platform."
+      description: "Join me for a live trading session with free signals and real-time analysis. Learn my proven strategies step by step."
     },
     {
-      id: "dQw4w9WgXcQ2", 
-      title: "QUOTEX Best Indicator Strategy - $6,630 in 12 Minutes",
-      thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
+      id: "pyWRUEAHHec", 
+      title: "Binary Options Free Strategy - Live Trading Results",
+      thumbnail: "https://img.youtube.com/vi/pyWRUEAHHec/maxresdefault.jpg",
       views: "18,234",
       publishedAt: "4 days ago"
     },
     {
-      id: "dQw4w9WgXcQ3",
-      title: "QUOTEX Withdrawal Proof - $4,029 Easy Strategy", 
-      thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
+      id: "EoM-MUpxzxw",
+      title: "Free Trading Signals - Market Analysis & Strategy", 
+      thumbnail: "https://img.youtube.com/vi/EoM-MUpxzxw/maxresdefault.jpg",
       views: "31,562",
       publishedAt: "1 week ago"
     },
     {
-      id: "dQw4w9WgXcQ4",
-      title: "Pocket Option Trading Strategy - $4,522 Profit",
-      thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg", 
+      id: "FqtQGvNoIN4",
+      title: "QUOTEX Live Trading - Free Educational Session",
+      thumbnail: "https://img.youtube.com/vi/FqtQGvNoIN4/maxresdefault.jpg", 
       views: "22,891",
       publishedAt: "1 week ago"
-    },
-    {
-      id: "dQw4w9WgXcQ5",
-      title: "QUOTEX Signals Review - $5,141 in 10 Minutes",
-      thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-      views: "15,677", 
-      publishedAt: "2 weeks ago"
     }
   ];
 

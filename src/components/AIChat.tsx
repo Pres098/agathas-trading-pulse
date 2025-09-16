@@ -29,18 +29,9 @@ const AIChat = () => {
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState<Message[]>([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [apiKey, setApiKey] = useState("");
-  const [showSettings, setShowSettings] = useState(false);
+  const apiKey = "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";
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const { toast } = useToast();
-
-  // Load API key from localStorage on mount
-  useEffect(() => {
-    const storedApiKey = localStorage.getItem('openrouter-api-key');
-    if (storedApiKey) {
-      setApiKey(storedApiKey);
-    }
-  }, []);
 
   // Auto scroll to bottom of messages
   useEffect(() => {
@@ -61,27 +52,7 @@ const AIChat = () => {
     }
   }, [isOpen, messages.length]);
 
-  const saveApiKey = () => {
-    if (apiKey.trim()) {
-      localStorage.setItem('openrouter-api-key', apiKey.trim());
-      setShowSettings(false);
-      toast({
-        title: "API Key Saved",
-        description: "You can now use the AI chat assistant.",
-      });
-    }
-  };
-
   const sendMessage = async (userMessage: string) => {
-    if (!apiKey.trim()) {
-      setShowSettings(true);
-      toast({
-        title: "API Key Required",
-        description: "Please enter your OpenRouter API key to use the AI chat.",
-        variant: "destructive"
-      });
-      return;
-    }
 
     const newUserMessage: Message = {
       id: Date.now().toString(),
@@ -222,14 +193,6 @@ Guidelines for responses:
               <Button
                 variant="ghost"
                 size="sm"
-                onClick={() => setShowSettings(!showSettings)}
-                className="text-white hover:bg-white/20 p-1 h-auto"
-              >
-                <Settings className="h-4 w-4" />
-              </Button>
-              <Button
-                variant="ghost"
-                size="sm"
                 onClick={() => setIsMinimized(!isMinimized)}
                 className="text-white hover:bg-white/20 p-1 h-auto"
               >
@@ -249,32 +212,6 @@ Guidelines for responses:
 
         {!isMinimized && (
           <CardContent className="p-0 h-[436px] flex flex-col">
-            {showSettings && (
-              <div className="p-4 border-b bg-secondary/50">
-                <div className="space-y-2">
-                  <label className="text-sm font-medium">OpenRouter API Key:</label>
-                  <Input
-                    type="password"
-                    placeholder="sk-or-v1-..."
-                    value={apiKey}
-                    onChange={(e) => setApiKey(e.target.value)}
-                    className="text-xs"
-                  />
-                  <div className="flex space-x-2">
-                    <Button size="sm" onClick={saveApiKey}>
-                      Save Key
-                    </Button>
-                    <Button size="sm" variant="outline" onClick={() => setShowSettings(false)}>
-                      Cancel
-                    </Button>
-                  </div>
-                  <p className="text-xs text-muted-foreground">
-                    Your API key is stored locally and never shared.
-                  </p>
-                </div>
-              </div>
-            )}
-
             {/* Messages */}
             <div className="flex-1 overflow-y-auto p-4 space-y-3">
               {messages.map((msg) => (

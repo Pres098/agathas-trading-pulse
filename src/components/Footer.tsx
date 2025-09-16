@@ -31,11 +31,11 @@ const Footer = () => {
 
   const services = [
     { name: "Free Signals", href: "/services" },
-    { name: "Premium Signals", href: "/services" },
-    { name: "VIP Mentorship", href: "/services" },
+    { name: "Free Education", href: "/education" },
+    { name: "Telegram Community", href: "https://t.me/+Lz2O4iqb4W40NzQy" },
+    { name: "YouTube Channel", href: "https://youtube.com/@agathasignals" },
     { name: "Live Trading", href: "/services" },
-    { name: "Trading Course", href: "/education" },
-    { name: "Consultation", href: "/contact" },
+    { name: "Free Resources", href: "/education" },
   ];
 
   const legal = [
@@ -67,6 +67,12 @@ const Footer = () => {
             </p>
             
             <div className="flex space-x-4">
+              <a href="https://t.me/+Lz2O4iqb4W40NzQy" target="_blank" rel="noopener noreferrer" 
+                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-trading-gold transition-colors">
+                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121L9.8 13.617l-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/>
+                </svg>
+              </a>
               <a href="https://youtube.com/@agathasignals" target="_blank" rel="noopener noreferrer" 
                  className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-trading-gold transition-colors">
                 <Youtube className="h-5 w-5" />
@@ -76,9 +82,6 @@ const Footer = () => {
               </a>
               <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-trading-gold transition-colors">
                 <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-trading-gold transition-colors">
-                <Linkedin className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -106,12 +109,23 @@ const Footer = () => {
             <ul className="space-y-3">
               {services.map((service) => (
                 <li key={service.name}>
-                  <Link 
-                    to={service.href} 
-                    className="text-gray-300 hover:text-trading-gold transition-colors"
-                  >
-                    {service.name}
-                  </Link>
+                  {service.href.startsWith('http') ? (
+                    <a 
+                      href={service.href} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-gray-300 hover:text-trading-gold transition-colors"
+                    >
+                      {service.name}
+                    </a>
+                  ) : (
+                    <Link 
+                      to={service.href} 
+                      className="text-gray-300 hover:text-trading-gold transition-colors"
+                    >
+                      {service.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
-import { ArrowRight, TrendingUp, Users, DollarSign, Star } from "lucide-react";
+import { ArrowRight, TrendingUp, Users, DollarSign, Star, Play } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Hero = () => {
@@ -84,16 +84,13 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
-              <Button size="lg" className="bg-white text-trading-blue hover:bg-white/90 shadow-trading">
-                <TrendingUp className="mr-2 h-5 w-5" />
-                Start Trading Now
+              <Button size="lg" className="bg-gradient-gold text-primary-foreground hover:opacity-90 shadow-trading-gold" onClick={() => window.open('https://youtube.com/@agathasignals', '_blank')}>
+                <Play className="mr-2 h-5 w-5" />
+                Watch Free Signals
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-white text-white hover:bg-white/10 hover:text-white"
-              >
-                Watch Success Stories
+              <Button size="lg" variant="outline" className="border-trading-gold text-trading-gold hover:bg-trading-gold hover:text-primary-foreground" onClick={() => window.open('https://t.me/+Lz2O4iqb4W40NzQy', '_blank')}>
+                <Users className="mr-2 h-5 w-5" />
+                Join Telegram
               </Button>
             </div>
           </div>

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Check, Crown, Star, Zap, TrendingUp, Users, MessageCircle, BookOpen } from "lucide-react";
+import { Check, Crown, Star, Zap, TrendingUp, Users, MessageCircle, BookOpen, Play } from "lucide-react";
 
 const Services = () => {
   const services = [
@@ -147,6 +147,15 @@ const Services = () => {
                       ? "bg-gradient-gold text-primary-foreground hover:opacity-90 shadow-trading-gold" 
                       : ""
                   }`}
+                  onClick={() => {
+                    if (service.name === "Free Trading Signals") {
+                      window.open('https://t.me/+Lz2O4iqb4W40NzQy', '_blank');
+                    } else if (service.name === "Free Mentorship") {
+                      window.open('https://youtube.com/@agathasignals', '_blank');
+                    } else {
+                      window.open('https://t.me/+Lz2O4iqb4W40NzQy', '_blank');
+                    }
+                  }}
                 >
                   {service.buttonText}
                 </Button>
@@ -192,10 +201,10 @@ const Services = () => {
               Join thousands of traders already learning and earning with Agatha's free signals and education
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-trading-blue hover:bg-gray-100">
+              <Button size="lg" className="bg-white text-trading-blue hover:bg-gray-100" onClick={() => window.open('https://t.me/+Lz2O4iqb4W40NzQy', '_blank')}>
                 Get Free Signals
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" onClick={() => window.open('https://t.me/+Lz2O4iqb4W40NzQy', '_blank')}>
                 Join Telegram Community
               </Button>
             </div>
