@@ -10,7 +10,7 @@ const Testimonials = () => {
       location: "Miami, FL",
       avatar: "/api/placeholder/64/64",
       rating: 5,
-      text: "Jenny's free signals have been incredibly accurate. I've been following her for 6 months and my trading has improved dramatically. The best part? It's completely free with no hidden costs!",
+      text: "Agatha's free signals have been incredibly accurate. I've been following her for 6 months and my trading has improved dramatically. The best part? It's completely free with no hidden costs!",
       profit: "+$18,500",
       timeframe: "6 months"
     },
@@ -20,7 +20,7 @@ const Testimonials = () => {
       location: "New York, NY",
       avatar: "/api/placeholder/64/64",
       rating: 5,
-      text: "Thanks to Jenny's free educational content and signals, I finally understand binary options trading. Her YouTube videos are pure gold and the Telegram community is so supportive.",
+      text: "Thanks to Agatha's free educational content and signals, I finally understand binary options trading. Her YouTube videos are pure gold and the Telegram community is so supportive.",
       profit: "+$25,000",
       timeframe: "8 months"
     },
@@ -30,7 +30,7 @@ const Testimonials = () => {
       location: "London, UK",
       avatar: "/api/placeholder/64/64",
       rating: 5,
-      text: "I was skeptical about free signals, but Jenny proved me wrong. Her transparency and genuine desire to help traders succeed is remarkable. Highly recommend joining her free community!",
+      text: "I was skeptical about free signals, but Agatha proved me wrong. Her transparency and genuine desire to help traders succeed is remarkable. Highly recommend joining her free community!",
       profit: "+$42,000",
       timeframe: "1 year"
     },
@@ -40,7 +40,7 @@ const Testimonials = () => {
       location: "Barcelona, Spain",
       avatar: "/api/placeholder/64/64",
       rating: 5,
-      text: "Working full-time and trading on the side seemed impossible until I found Jenny's free signals. Now I make more from trading than my day job - all completely free!",
+      text: "Working full-time and trading on the side seemed impossible until I found Agatha's free signals. Now I make more from trading than my day job - all completely free!",
       profit: "+$15,200",
       timeframe: "4 months"
     },
@@ -50,7 +50,7 @@ const Testimonials = () => {
       location: "Toronto, Canada",
       avatar: "/api/placeholder/64/64",
       rating: 5,
-      text: "At 58, I thought it was too late to learn trading. Jenny's free educational content and signals proved me wrong. Best decision ever - no costs involved!",
+      text: "At 58, I thought it was too late to learn trading. Agatha's free educational content and signals proved me wrong. Best decision ever - no costs involved!",
       profit: "+$32,800",
       timeframe: "10 months"
     },
@@ -60,7 +60,7 @@ const Testimonials = () => {
       location: "Seoul, South Korea",
       avatar: "/api/placeholder/64/64",
       rating: 5,
-      text: "As a college student, I needed extra income. Jenny's free signals got me started, and the community support is amazing. All free with no hidden fees!",
+      text: "As a college student, I needed extra income. Agatha's free signals got me started, and the community support is amazing. All free with no hidden fees!",
       profit: "+$8,500",
       timeframe: "3 months"
     }
@@ -82,7 +82,7 @@ const Testimonials = () => {
             What Our Traders Are Saying
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Real results from real people. See how Jenny's free trading signals have transformed lives and portfolios.
+            Real results from real people. See how Agatha's free trading signals have transformed lives and portfolios.
           </p>
         </div>
 

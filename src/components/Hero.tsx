@@ -35,7 +35,7 @@ const Hero = () => {
             
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
               Master Binary Trading with
-              <span className="text-trading-gold block">Jenny's Signals</span>
+              <span className="text-trading-gold block">Agatha's Signals</span>
             </h1>
             
             <p className="text-xl text-white/90 mb-8 leading-relaxed">

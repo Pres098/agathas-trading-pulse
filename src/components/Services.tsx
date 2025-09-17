@@ -198,7 +198,7 @@ const Services = () => {
               Ready to Start Trading for Free?
             </h3>
             <p className="text-lg mb-6 opacity-90">
-              Join thousands of traders already learning and earning with Jenny's free signals and education
+              Join thousands of traders already learning and earning with Agatha's free signals and education
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-white text-trading-blue hover:bg-gray-100" onClick={() => window.open('https://t.me/+amhxB4d7lMFhMGMy', '_blank')}>

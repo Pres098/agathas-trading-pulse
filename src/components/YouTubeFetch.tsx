@@ -23,7 +23,7 @@ const YouTubeFetch = () => {
   });
   const [isLoading, setIsLoading] = useState(true);
 
-  // Real videos from Jenny's channel
+  // Real videos from Agatha's channel
   const mockVideos: VideoData[] = [
     {
       id: "QYPBsLFpuL8",
@@ -231,7 +231,7 @@ const YouTubeFetch = () => {
                 Don't Miss Any Free Trading Opportunities
               </h3>
               <p className="text-lg mb-6 opacity-90">
-                Subscribe to Jenny's YouTube channel for daily FREE trading signals, live sessions, and market analysis.
+                Subscribe to Agatha's YouTube channel for daily FREE trading signals, live sessions, and market analysis.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="bg-red-500 hover:bg-red-600 text-white" onClick={openYouTubeChannel}>

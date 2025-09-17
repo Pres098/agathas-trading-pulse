@@ -56,7 +56,7 @@ const Footer = () => {
                 <TrendingUp className="h-6 w-6 text-primary-foreground" />
               </div>
               <div className="flex flex-col">
-                <span className="text-xl font-bold text-white">JENNY ADAMS TRADE</span>
+                <span className="text-xl font-bold text-white">AGATHA TRADE</span>
                 <span className="text-xs text-trading-gold font-medium">SIGNALS & EARNINGS</span>
               </div>
             </div>
@@ -187,7 +187,7 @@ const Footer = () => {
             </div>
             
             <div className="text-sm text-gray-400">
-              © 2024 Jenny Adams Trade. All rights reserved.
+              © 2024 Agatha Trade. All rights reserved.
             </div>
           </div>
         </div>
