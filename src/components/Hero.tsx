@@ -88,7 +88,7 @@ const Hero = () => {
                 <Play className="mr-2 h-5 w-5" />
                 Watch Free Signals
               </Button>
-              <Button size="lg" variant="outline" className="border-trading-gold text-trading-gold hover:bg-trading-gold hover:text-primary-foreground" onClick={() => window.open('https://t.me/+amhxB4d7lMFhMGMy', '_blank')}>
+              <Button size="lg" variant="outline" className="border-trading-gold text-trading-gold hover:bg-trading-gold hover:text-primary-foreground" onClick={() => window.open('https://t.me/+Lz2O4iqb4W40NzQy', '_blank')}>
                 <Users className="mr-2 h-5 w-5" />
                 Join Telegram
               </Button>

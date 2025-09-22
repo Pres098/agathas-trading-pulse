@@ -26,32 +26,32 @@ const YouTubeFetch = () => {
   // Real videos from Agatha's channel
   const mockVideos: VideoData[] = [
     {
-      id: "QYPBsLFpuL8",
-      title: "Binary Options Strategy - Free Live Trading Session",
-      thumbnail: "https://img.youtube.com/vi/QYPBsLFpuL8/maxresdefault.jpg",
-      views: "25,431",
+      id: "kcATt3OISoI",
+      title: "Advanced Binary Options Strategy - Live Trading Session",
+      thumbnail: "https://img.youtube.com/vi/kcATt3OISoI/maxresdefault.jpg",
+      views: "28,543",
       publishedAt: "2 days ago",
-      description: "Join me for a live trading session with free signals and real-time analysis. Learn my proven strategies step by step."
+      description: "Join me for an exclusive live trading session where I share my most profitable binary options strategies. Watch real trades with live results!"
     },
     {
-      id: "-LJ4vIaWyQI", 
-      title: "Free Trading Signals - Live Results & Analysis",
-      thumbnail: "https://img.youtube.com/vi/-LJ4vIaWyQI/maxresdefault.jpg",
-      views: "18,234",
+      id: "pyWRUEAHHec", 
+      title: "Free Trading Signals & Market Analysis",
+      thumbnail: "https://img.youtube.com/vi/pyWRUEAHHec/maxresdefault.jpg",
+      views: "22,156",
       publishedAt: "4 days ago"
     },
     {
-      id: "lwP4i2GN4K8",
-      title: "Market Analysis & Free Trading Strategy", 
-      thumbnail: "https://img.youtube.com/vi/lwP4i2GN4K8/maxresdefault.jpg",
-      views: "31,562",
+      id: "EoM-MUpxzxw",
+      title: "Profitable Trading Patterns You Need to Know", 
+      thumbnail: "https://img.youtube.com/vi/EoM-MUpxzxw/maxresdefault.jpg",
+      views: "35,721",
       publishedAt: "1 week ago"
     },
     {
-      id: "YBNe9UhfqMI",
-      title: "Live Trading Session - Free Educational Content",
-      thumbnail: "https://img.youtube.com/vi/YBNe9UhfqMI/maxresdefault.jpg", 
-      views: "22,891",
+      id: "FqtQGvNoIN4",
+      title: "Live Trading Results - Free Educational Content",
+      thumbnail: "https://img.youtube.com/vi/FqtQGvNoIN4/maxresdefault.jpg", 
+      views: "19,863",
       publishedAt: "1 week ago"
     }
   ];

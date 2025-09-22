@@ -149,11 +149,11 @@ const Services = () => {
                   }`}
                   onClick={() => {
                     if (service.name === "Free Trading Signals") {
-                      window.open('https://t.me/+amhxB4d7lMFhMGMy', '_blank');
+                      window.open('https://t.me/+Lz2O4iqb4W40NzQy', '_blank');
                     } else if (service.name === "Free Mentorship") {
                       window.open('https://youtube.com/@misstrading', '_blank');
                     } else {
-                      window.open('https://t.me/+amhxB4d7lMFhMGMy', '_blank');
+                      window.open('https://t.me/+Lz2O4iqb4W40NzQy', '_blank');
                     }
                   }}
                 >
@@ -201,10 +201,10 @@ const Services = () => {
               Join thousands of traders already learning and earning with Agatha's free signals and education
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-trading-blue hover:bg-gray-100" onClick={() => window.open('https://t.me/+amhxB4d7lMFhMGMy', '_blank')}>
+              <Button size="lg" className="bg-white text-trading-blue hover:bg-gray-100" onClick={() => window.open('https://t.me/+Lz2O4iqb4W40NzQy', '_blank')}>
                 Get Free Signals
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" onClick={() => window.open('https://t.me/+amhxB4d7lMFhMGMy', '_blank')}>
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" onClick={() => window.open('https://t.me/+Lz2O4iqb4W40NzQy', '_blank')}>
                 Join Telegram Community
               </Button>
             </div>
